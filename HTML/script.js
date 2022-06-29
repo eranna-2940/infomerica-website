@@ -31,6 +31,10 @@ function validemail() {
 
         localStorage.setItem('email', r_email.value);
         localStorage.setItem('password',r_password.value);
+            
+            if(email.value == "" || password.value == ""){
+        alert('please filled all inputes')
+    }
 
         document.write(`
             {Email:${r_email.value}<br>
